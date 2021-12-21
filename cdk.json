@@ -1,0 +1,23 @@
+{
+  "app": "npx ts-node --prefer-ts-exts bin/infrastructure.ts",
+  "context": {
+    "commonTags": {
+      "project": "infrastructure"
+    },
+    "awsEnvDetails": {
+      "prod": {
+        "account": "000632543325",
+        "region": "eu-west-1"
+      }
+    },
+    "baseDomain": {
+      "prod": "estrellasobreunvolcan.com"
+    },
+    "mainWebsiteBucketName": {
+      "prod": "deltoro-estrellas-website"
+    },
+    "wildcardCertificateArn": {
+      "prod": "arn:aws:acm:us-east-1:000632543325:certificate/0bc454d4-c351-44ec-95ce-036d15bfd184"
+    }
+  }
+}
