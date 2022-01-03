@@ -20,7 +20,7 @@ export class PaymentQueue extends cdk.Stack {
 
   private createApiGatewayWithSqs() {
     new ApiGatewayToSqs(this, "PaymentAPIGatewaySQS", {
-      deployDeadLetterQueue: false,
+      deployDeadLetterQueue: true,
       allowCreateOperation: true,
       allowReadOperation: false,
       allowDeleteOperation: false,
