@@ -9,3 +9,6 @@ provider:
 functions:
   main:
     handler: index.handler
+    environment:
+      ETH_FROM_ADDRESS: "0xADDRESS"
+      ETH_PRIV_KEY: "private_key"
