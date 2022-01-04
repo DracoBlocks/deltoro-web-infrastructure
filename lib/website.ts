@@ -82,7 +82,7 @@ export class Website extends cdk.Stack {
       ],
       destinationBucket: this.bucket,
       cacheControl: [
-        s3deploy.CacheControl.maxAge(Duration.days(30)),
+        s3deploy.CacheControl.maxAge(Duration.days(365)),
         s3deploy.CacheControl.setPublic(),
         s3deploy.CacheControl.fromString("immutable"),
       ],
