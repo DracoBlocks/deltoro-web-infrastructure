@@ -87,6 +87,7 @@ export class Website extends cdk.Stack {
         s3deploy.CacheControl.fromString("immutable"),
       ],
       prune: false,
+      memoryLimit: 256, //Needed for larger files (such as videos)
     });
   }
 
