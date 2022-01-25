@@ -60,7 +60,7 @@ export class Website extends cdk.Stack {
         s3deploy.CacheControl.noCache(),
         s3deploy.CacheControl.fromString("no-store"),
       ],
-      prune: true,
+      prune: false,
     });
 
     new s3deploy.BucketDeployment(this, "MainWebsiteStaticContent", {
